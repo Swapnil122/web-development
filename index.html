@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navarea">
+            <ul>
+                <li><a href="#" onmouseenter="changeImage('1.jpg')">Home</a></li>
+                <li><a href="#" onmouseenter="changeImage('2.jpg')">About</a></li>
+                <li><a href="#" onmouseenter="changeImage('3.jpg')">Contact</a></li>
+                <li><a href="#" onmouseenter="changeImage('4.jpg')">Settings</a></li>
+                <li><a href="#" onmouseenter="changeImage('5.jpg')">Help</a></li>
+            </ul>
+        </div>
+        <div class="imgarea">
+           <img src="1.jpg" id="slide" alt="">
+        </div>
+    </div>
+    <script>
+        function changeImage(anything){
+            document.getElementById('slide').src= anything;
+        }
+    </script>
+</body>
+</html>
